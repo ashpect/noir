@@ -1,0 +1,14 @@
+[package]
+name = "execute_program_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+acvm = { workspace = true }
+bn254_blackbox_solver = { workspace = true }
+m31_blackbox_solver = { workspace = true }
+nargo = { workspace = true }
+
+[[bin]]
+name = "execute_program_demo"
+path = "main.rs" 

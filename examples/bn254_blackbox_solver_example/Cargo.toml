@@ -1,0 +1,15 @@
+[package]
+name = "bn254_blackbox_solver_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bn254_blackbox_solver = { workspace = true }
+acir = { workspace = true }
+acvm_blackbox_solver = { workspace = true }
+ark-bn254 = { version = "^0.5.0", default-features = false, features = ["curve"] }
+ark-ec = { version = "^0.5.0", default-features = false }
+
+[[bin]]
+name = "bn254_blackbox_solver_example"
+path = "main.rs" 

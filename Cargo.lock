@@ -823,6 +823,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "bn254_blackbox_solver_example"
+version = "0.1.0"
+dependencies = [
+ "acir",
+ "acvm_blackbox_solver",
+ "ark-bn254 0.5.0",
+ "ark-ec 0.5.0",
+ "bn254_blackbox_solver",
+]
+
+[[package]]
 name = "borsh"
 version = "1.5.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1709,6 +1720,16 @@ checksum = "64f18991e7bf11e7ffee451b5318b5c1a73c52d0d0ada6e5a3017c8c1ced6a21"
 dependencies = [
  "libc",
  "str-buf",
+]
+
+[[package]]
+name = "execute_program_demo"
+version = "0.1.0"
+dependencies = [
+ "acvm",
+ "bn254_blackbox_solver",
+ "m31_blackbox_solver",
+ "nargo",
 ]
 
 [[package]]
@@ -3073,6 +3094,25 @@ dependencies = [
  "serde_json",
  "serde_repr",
  "url",
+]
+
+[[package]]
+name = "m31_blackbox_solver"
+version = "1.0.0-beta.7"
+dependencies = [
+ "acir",
+ "acir_field",
+ "acvm",
+ "thiserror 1.0.69",
+]
+
+[[package]]
+name = "m31_field_example"
+version = "0.1.0"
+dependencies = [
+ "acir",
+ "acir_field",
+ "m31_blackbox_solver",
 ]
 
 [[package]]

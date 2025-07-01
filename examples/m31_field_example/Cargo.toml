@@ -1,0 +1,14 @@
+[package]
+name = "m31_field_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+acir = { workspace = true }
+acir_field = { workspace = true }
+m31_blackbox_solver = { workspace = true }
+ark-m31 = { workspace = true }
+
+[[bin]]
+name = "m31_field_example"
+path = "main.rs" 
